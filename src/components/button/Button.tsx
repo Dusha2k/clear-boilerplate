@@ -1,7 +1,7 @@
 import React from "react";
 
-const Button = ({}) => {
-  return <></>;
+const Button = (): JSX.Element => {
+  return <>hello</>;
 };
 
 export default Button;
