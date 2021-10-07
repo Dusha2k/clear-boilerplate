@@ -28,10 +28,16 @@
                 "ignoreComments": true
             }
         ],
-        "@typescript-eslint/no-explicit-any": [
+        "@typescript-eslint/no-explicit-any": ["off"],
+        "@typescript-eslint/ban-types": [
             "error",
             {
-                "ignoreRestArgs": true
+                "extendDefaults": true,
+                "types": {
+                    "{}": false,
+                    "object": false,
+                    "Object": false
+                }
             }
         ]
     },
